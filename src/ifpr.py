@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 
-service = Service(executable_path='./chromedriver')
+service = Service(ChromeDriverManager().install())
 navegador = webdriver.Chrome(service=service)
 
 navegador.get('https://www.google.com')
